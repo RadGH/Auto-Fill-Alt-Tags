@@ -1,10 +1,36 @@
 <?php
 /*
 Plugin Name: Autofill Alt Tags
+Version:     1.0.0
+Plugin URI:  https://radleysustaire.com/
 Description: Automatically fills in alt tags for your images in the post content. Preserves existing alt text if it exists. If alt text is not entered for an attachment, the caption or title will be used instead. No configuration necessary.
 Author: Radley Sustaire
 Author URI: https://radleysustaire.com/
+License:     GPL2
 */
+
+/*
+GNU GENERAL PUBLIC LICENSE
+
+A WordPress plugin that allows you to mark pages with an option to hide
+from search engines, by adding a noindex meta tag to the single page's <head>
+Copyright (C) 2018 Radley Sustaire
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>
+*/
+
+if( !defined( 'ABSPATH' ) ) exit;
 
 /**
  * Return an attachment ID from an image url or html tag.
