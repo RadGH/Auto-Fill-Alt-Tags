@@ -16,6 +16,9 @@ _Automatically fills in alt tags for your images in the post content._
 
 Automatically fills in alt tags for your images in the post content. Preserves existing alt text if it exists. If alt text is not entered for an attachment, the caption or title will be used instead. No configuration necessary.
 
+* Does not override existing alt text.
+* Does not provide alt text for external images, or images that are not in the media library.
+
 ## Installation ##
 
 1. Upload the plugin files to `/wp-content/plugins/auto-fill-alt-tags/`, or install the plugin through the WordPress plugins screen directly.
@@ -26,32 +29,17 @@ Automatically fills in alt tags for your images in the post content. Preserves e
 
 ## Frequently Asked Questions ##
 
-**Are there any advanced features, such as to block specific robots or add this code to archive/search pages?**
-
-No, this is intentionally a simple and lightweight plugin.
-
-**Can this be used for custom post types or posts?**
-
-Yes, with a bit of PHP. Just use the following code in your functions.php, which will add support for "post" and "product":
-
-```php
-function noindex_for_cpts( $post_types ) {
-	return $post_types + array( "post", "product" );
-}
-add_filter('noindex-pages-post-types', 'noindex_for_cpts');
-```
+None yet.
 
 ## Screenshots ##
 
-![The publish box when editing a page, the added checkbox is highlighted.](screenshot-1.png)
-![The source code for the page, the added meta tag is highlighted.](screenshot-2.png)
+![A before and after picture displaying the added alt tags in various situations.](screenshot-1.png)
 
 
 ## Changelog ##
 
 #### 1.0
 * First release
-* Pre-release version notes can be found on Github
 
 ## Upgrade Notice ##
 
