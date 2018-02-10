@@ -4,9 +4,10 @@ Plugin Name: Autofill Alt Tags
 Version:     1.0.0
 Plugin URI:  https://radleysustaire.com/
 Description: Automatically fills in alt tags for your images in the post content. Preserves existing alt text if it exists. If alt text is not entered for an attachment, the caption or title will be used instead. No configuration necessary.
-Author: Radley Sustaire
-Author URI: https://radleysustaire.com/
-License:     GPL2
+Author:      Radley Sustaire
+Author URI:  https://radleysustaire.com/
+License:     GPLv3
+License URI: http://www.gnu.org/licenses/gpl-3.0.txt
 */
 
 /*
